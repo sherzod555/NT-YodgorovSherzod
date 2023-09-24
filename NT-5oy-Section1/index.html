@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT 5-oy Project 1</title>
+
+    <!-- Bootstrap link -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="main_section">
+      <aside class="aside_bar">
+        <div class="aside_container">
+          <div class="aside_header">
+            <button class="hamburger_menu buttons">
+              <img src="./images/Menu.svg" alt="hamburger-menu" />
+            </button>
+
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="youtube" />
+            </a>
+          </div>
+
+          <div class="aside_home_section">
+            <a href="#" class="aside_home_items"
+              ><img src="./images/home-icon.svg" alt="home" />
+              <p class="aside_home_title">Home</p></a
+            >
+            <a href="#" class="aside_home_items"
+              ><img src="./images/ui-01.svg" alt="trending" />
+              <p class="aside_home_title">Trending</p></a
+            >
+            <a href="#" class="aside_home_items"
+              ><img src="./images/subs.svg" alt="subscribers" />
+              <p class="aside_home_title">Subscribtions</p></a
+            >
+          </div>
+
+          <div class="aside_categories">
+            <template class="aside_category_template">
+              <a href="#" class="aside_category_item">
+                <img src="./images/documents-11.png" alt="category" />
+                <p class="aside_category_title">Library</p>
+              </a>
+            </template>
+          </div>
+
+          <div class="aside_subs">
+            <h3>Subscriptions</h3>
+            <template class="aside_subs_template">
+              <a href="#" class="aside_subs_item">
+                <img src="./images/avatar-2.png" alt="subs" />
+                <p class="aside_subs_title">Gussie Singleton</p>
+              </a>
+            </template>
+          </div>
+
+          <button class="buttons setting_btn">
+            <img src="./images/setting-icon.svg" alt="Setting" />
+            <p>Setting</p>
+          </button>
+        </div>
+      </aside>
+
+      <div class="custom_container">
+        <nav class="nav_bar mini_container">
+          <div class="search_bar">
+            <input type="search" class="search_input" placeholder="Search" />
+            <img src="./images/search.svg" alt="search" />
+          </div>
+
+          <div class="profile_section">
+            <button class="buttons"><img src="./images/phone-18.svg" alt="video" /></button>
+            <button class="buttons"><img src="./images/Combinedhape.svg" alt="shape" /></button>
+            <button class="buttons"><img src="./images/ui-11.svg" alt="notification" /></button>
+            <button class="buttons"><img src="./images/avatar-1.png" alt="avatar" /></button>
+          </div>
+        </nav>
+
+        <div class="all_posts">
+          <div class="own_posts">
+            <div class="own_post_header">
+              <div class="post_author">
+                <img class="author_img" src="./images/dolli.png" alt="author" />
+                <p class="author_name">Dollie Blair</p>
+              </div>
+              
+                <div class="arrey_buttons">
+                  <button class="buttons">
+                    <img class="left" src="./images/Left.png" alt="arrey" />
+                  </button>
+                  <button class="buttons">
+                    <img class="right" src="./images/Left.png" alt="arrey" />
+                  </button>
+                </div>
+              
+            </div>
+            <div class="ownpost_wrapper">
+              <template class="ownpost_template">
+                <div class="ownpost_box">
+                  <div>
+                    <img class="vid_img own_video_img" src="./images/video-img-3.png" alt="video" />
+                  </div>
+                  <div>
+                    <h4 class="vid_title video_name">A Brief History Of Creation</h4>
+                    <div class="vid_footer">
+                        <div style="display: flex;"><p class="vid_view">80k </p><span>views</span></div>
+                        <p class="vid_auth">Dollie Blair</p>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <div class="recomended_post">
+            <div class="rec_post_header">
+              <h3 class="rec_name">Recomended</h3>
+
+              <div>
+                <div class="arrey_buttons">
+                  <button class="buttons">
+                    <img class="left" src="./images/Left.png" alt="arrey" />
+                  </button>
+                  <button class="buttons">
+                    <img class="right" src="./images/Left.png" alt="arrey" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="rec_wrapper">
+              <template class="rec_template">
+                <div class="rec_box">
+                  <div>
+                    <img
+                      class="vid_img rec_video_img"
+                      src="./images/recommend-img-2.png"
+                      alt="video" />
+                  </div>
+                  <div>
+                    <h4 class="vid_title rec_video_name">Dude You Re Getting A Telescope</h4>
+                    <div class="vid_footer">
+                      <div style="display: flex;"><p class="vid_view">80k </p><span>views</span></div>
+                      <p class="vid_auth">Dollie Blair</p>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <div class="other_posts">
+            <div class="other_post_header">
+              <div class="post_category">
+                <img class="category_img" src="./images/food.png" alt="food" />
+                <p class="category_name">Food & Drink</p>
+                <p class="category_recs">Recommended channel for you</p>
+              </div>
+              <div class="arrey_wrapper">
+                <button class="sub_btn buttons">Subscribe 2.3m</button>
+                <div class="arrey_buttons">
+                  <button class="buttons">
+                    <img class="left" src="./images/Left.png" alt="arrey" />
+                  </button>
+                  <button class="buttons">
+                    <img class="right" src="./images/Left.png" alt="arrey" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="other_post_wrapper">
+                <template class="other_template">
+              <div class="other_post_box">
+                <div>
+                  <img class="vid_img other_video_img" src="./images/video-img-3.png" alt="video" />
+                </div>
+                <div>
+                  <h4 class="vid_title other_video_name">A Brief History Of Creation</h4>
+                  <div class="vid_footer">
+                    <div style="display: flex;"><p class="vid_view">80k </p><span>views</span></div>
+                    <p class="vid_auth">Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+            </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/data.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script> -->
+</body>
+</html>
